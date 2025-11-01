@@ -1,0 +1,140 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #59556e;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+    text-align: center;
+    align-items: center;
+    color: azure;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+
+.header-link {
+    color: azure;
+    text-decoration: none;
+}
+
+.greeting {
+    display: flex;
+    font-family: "Indie Flower", cursive;
+    gap: 250px;
+    margin: 50px;
+    font-size: 150%;
+
+}
+
+.greeting-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    max-width: 400px;
+}
+
+.general {
+    background-color: #59556e;
+    font-family: "Raleway", sans-serif;
+    color: azure;
+}
+
+.general-text {
+    font-family: "Raleway", sans-serif;
+    margin: 20px;
+    font-size: 150%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.footer {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #59556e;
+}
+
+.title {
+    display: flex;
+    font-family: "Indie Flower", cursive;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about {
+    background-color: #59556e;
+    padding: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: azure;
+    padding-bottom: 50px;
+    list-style-position: inside;
+    font-size: 120%;
+    line-height: 150%;
+
+}
+
+.about-text {
+    padding-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.gallery-discription {
+    font-size: 100%;
+}
+
+.sertification {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    text-align: center;
+}
+
+.sert-about {
+    background-color: #59556e;
+    color: azure;
+    padding: 5%;
+}
+
+.sert-link {
+
+    color: azure;
+}
+
+.Feedback {
+    max-width: fit-content;
+}
+
+.Feedback-general {
+    display: flex;
+    justify-content: center;
+}
+
+.sent {
+    font-family: "Raleway", sans-serif;
+    font-size: 80%;
+}
+
+.link-anchor {
+    text-decoration: none;
+    color: #59556e;
+    font-weight: 600;
+}

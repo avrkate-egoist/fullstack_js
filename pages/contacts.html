@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container">
+    <header class="header">
+        <a class="header-link" href="/index.html">Головна</a> |
+        <a class="header-link" href="/pages/about.html">Про мене</a> |
+        <a class="header-link" href="/pages/gallery.html">Галерея</a> |
+        <a class="header-link" href="/pages/sertification.html">Сертифікати</a> |
+        <a class="header-link" href="/pages/contacts.html">Контакти</a> |
+        <a class="header-link" href="/pages/anchors.html">Якорі</a>
+    </header>
+
+    <form class="Feedback-general general-text">
+        <fieldset class="Feedback">
+            <legend class="title">Feedback</legend>
+            <div>
+                <div>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <p>
+                        З якою метою ви звертаєтесь?
+                    </p>
+                    <input type="radio" name="type" value="question"> Питання<br>
+                    <input type="radio" name="type" value="work"> Співпраця
+                    <hr>
+                </div>
+                <div>
+                    <label for="type">Виберіть запит:</label>
+                    <select id="type" name="type">
+                        <option value="2d">Робота з 2д-проектами</option>
+                        <option value="3d">Робота з 3д-проектами</option>
+                        <option value="web">Робота з вебсайтами</option>
+                    </select>
+                    <hr>
+                </div>
+                <div>
+                    <label for="message">Повідомлення:</label>
+                    <br>
+                    <textarea id="message" rows="5" cols="30"></textarea>
+                </div>
+                <input class="sent" type="submit" value="Надіслати">
+            </div>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
