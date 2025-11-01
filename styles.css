@@ -138,3 +138,10 @@
     color: #59556e;
     font-weight: 600;
 }
+
+.hr-style {
+    width: 40%;
+    border: none;
+    background-color: #59556e;
+    height: 4px;
+}
