@@ -69,8 +69,9 @@
     font-size: 300%;
     display: flex;
     justify-content: center;
-
+    border: 10px;
 }
+
 
 .about {
     background-color: #59556e;
@@ -121,11 +122,15 @@
 
 .Feedback {
     max-width: fit-content;
+    border: 4px solid #59556e;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .Feedback-general {
     display: flex;
     justify-content: center;
+    color: #59556e;
 }
 
 .sent {
@@ -144,4 +149,11 @@
     border: none;
     background-color: #59556e;
     height: 4px;
+}
+
+.hr-style-Feedback {
+    width: 60%;
+    border: none;
+    background-color: #59556e;
+    height: 2px;
 }
