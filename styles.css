@@ -157,3 +157,15 @@
     background-color: #59556e;
     height: 2px;
 }
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about {
+    display: block;
+    width: 100%;
+    height: auto;
+}
