@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <p>Застосовується до тегів p, вага 1</p>
+    <div class="box">Застосовується до елементів з класом .box, вага 10</div>
+    <div id="unique">Застосовується до елементів з id #unique, вага 100</div>
+    <div data-type="color">Застосовується до елементів з атрибутом [data-type], вага 10</div>
+    <div>
+        <p>Застосовується до p, вкладених у div, вага 2</p>
+
+    </div>
+    <div>
+        <p class="child">Застосовується до p, які є прямими дочірніми елементами div, вага 11</p>
+    </div>
+    <div id="chain" class="combo">Застосовується до елемента з id і класом одночасно, вага 110</div>
+
+    <p class="special">Застосовується до тегу p зі спеціальним класом .special, вага 11</p>
+    <button type="button">Застосовується до кнопок з атрибутом type="button", вага 11</button>
+    <div class="outer">
+        <div class="inner">
+            <p id="deep">Застосовується до p всередині .outer .inner, вага 112</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

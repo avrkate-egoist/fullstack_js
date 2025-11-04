@@ -1,0 +1,39 @@
+p {
+    background-color: lightblue;
+}
+
+.box {
+    background-color: pink;
+}
+
+#unique {
+    background-color: orange;
+}
+
+[data-type] {
+    background-color: lightgreen;
+}
+
+div p {
+    background-color: yellow;
+}
+
+div>p.child {
+    background-color: violet;
+}
+
+#chain.combo {
+    background-color: lightcoral;
+}
+
+p.special {
+    background-color: khaki;
+}
+
+button[type="button"] {
+    background-color: skyblue;
+}
+
+.outer .inner #deep {
+    background-color: plum;
+}
