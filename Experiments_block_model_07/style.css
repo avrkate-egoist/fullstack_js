@@ -1,0 +1,192 @@
+/*стилі для CSS_properties*/
+.block-div {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: lightcoral;
+    border: 2px solid crimson;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: orange;
+    padding: 20px;
+}
+
+.inline-block-div {
+    display: inline-block;
+    padding: 10px;
+    background-color: lightblue;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.inline-block-div span {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+}
+
+/*стилі для float_clear*/
+.float-left-box {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 15px 10px 0;
+    background-color: lightseagreen;
+    border: 2px solid darkgreen;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.float-right-box {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 0 0 10px 15px;
+    background-color: lightseagreen;
+    border: 2px solid darkgreen;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.float-left-box-small {
+    float: left;
+    width: 120px;
+    height: 80px;
+    margin: 0 15px 10px 0;
+    background-color: orange;
+    color: white;
+    border: 2px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.float-right-box-small {
+    float: right;
+    width: 120px;
+    height: 80px;
+    margin: 0 0 10px 15px;
+    background-color: orange;
+    color: white;
+    border: 2px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.clear-box {
+    clear: both;
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+/*стилі для overflow*/
+.container-1 {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    overflow: auto;
+}
+
+.container-2 {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.container-3 {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+/*стилі для positioning_elements*/
+.static {
+    position: static;
+    background-color: lightblue;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    background-color: lightgreen;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.sticky-general {
+    width: 60px;
+    position: sticky;
+    top: 0;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sticky-1 {
+    background-color: #f39c12;
+
+}
+
+.sticky-2 {
+    background-color: blueviolet;
+}
