@@ -1,0 +1,54 @@
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.example {
+    border: 3px solid gray;
+    background: lightgray;
+    margin: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.box {
+    width: 200px;
+    height: 50px;
+    background: gray;
+    margin: 10px;
+    border: 3px solid dimgray;
+    box-sizing: border-box;
+}
+
+.left-1 {
+    float: left;
+}
+
+.right-1 {
+    float: right;
+}
+
+.ex4 {
+    float: right;
+}
+
+.right-4-1 {
+    float: right;
+    height: 110px;
+}
+
+.ex5-block {
+    width: 440px;
+    margin: 0 auto;
+}
+
+
+
+.ex5 {
+    float: right;
+}
+
+.right-5-1 {
+    float: right;
+    height: 110px;
+}
