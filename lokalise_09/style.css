@@ -26,6 +26,7 @@ body {
     align-items: center;
     padding: 25px 51px;
 
+
 }
 
 .header-left {
@@ -36,6 +37,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     margin-right: 10px;
+
 
 }
 
@@ -567,6 +569,10 @@ body {
         padding: 5%;
     }
 
+    .header-left-navigation {
+        gap: 5%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -594,4 +600,6 @@ body {
     .header-left {
         gap: 16px;
     }
+
+
 }
