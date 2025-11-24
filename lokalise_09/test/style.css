@@ -21,21 +21,22 @@ body {
 }
 
 .header {
+    /* Флекс нічого тут не робить */
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
     padding: 25px 51px;
-
-
 }
 
 .header-left {
     display: flex;
     justify-content: space-between;
     gap: 42px;
+    /* у них гап по дизайну 42 */
     align-items: center;
     font-size: 15px;
     font-weight: 400;
     margin-right: 10px;
-
-
 }
 
 .header-icon {
@@ -44,25 +45,26 @@ body {
 
 .logo-container {
     padding-right: 10px;
+    /* відступ між логотипом і навігацією щоб не притискалися */
     display: flex;
+    /* в ньому за звичай один обʼжкт і два тільки коли є меню кнопка. Тоді щоб ставали на одному рівні */
     align-items: center;
-    gap: 10px
+    gap: 10px;
 }
 
 .header-right {
-    display: flex;
-
     min-width: 250px;
     flex-shrink: 0;
 }
-
 
 .header-left-navigation {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    /*gap: clamp(10px, 5vw, 42px);  гап виключив, кламп тут не спрацьовує. Щоб вони не зліпалися, дав лішкам паддінг по сторонах */
     margin-right: 10px;
     flex-grow: 1;
+    /* дозволив йому рости */
 
     li {
         padding: 0 10px;
@@ -80,11 +82,14 @@ body {
     width: 120px;
     height: 45px;
     border-radius: 0;
+    /* вони такі за замовчуванням */
     border: none;
     background-color: #FF6336;
     color: #FFFFFF;
     margin-left: 10px;
+    /* відступ між кнопками */
 }
+
 
 .main-section {
     display: flex;
@@ -177,6 +182,7 @@ body {
     max-width: 720px;
     font-size: 50px;
     font-weight: 600;
+    /* без пікселів, це просто число */
     line-height: 60px;
 }
 
@@ -540,6 +546,7 @@ body {
     max-width: 1290px;
     margin: 0 auto;
     padding: 48px 10px;
+    /* 10 щоб воно не прилипало до боків */
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #000;
@@ -569,6 +576,8 @@ body {
 
 
 @media (max-width: 992px) {
+
+    /* поставив тут 992 як в бутстрапі */
     .main-section {
         flex-direction: column;
     }
@@ -576,22 +585,19 @@ body {
     .container {
         margin: 0 auto;
         padding-inline: 5%;
+        /* Чому тут у контейнера раптово зʼявляється паддінг я не зрозумів,
+         але най буде тільки не повертикалі бо хедер скаче в висоту */
     }
 
     .header-left {
         gap: 0;
-
     }
 
     .header-left-navigation {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5%;
+        gap: 10px 20px;
     }
-
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -612,13 +618,13 @@ body {
     }
 
     .header-icon {
-        display: flex;
+        display: inline;
         width: 50px;
     }
 
     .header-left {
         gap: 16px;
-        flex-wrap: wrap;
-
     }
+
+
 }
