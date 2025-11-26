@@ -1,0 +1,48 @@
+.productivity-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding-top: 95px;
+
+  .productivity-img {
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .productivity-button {
+    border-radius: 0;
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 190px;
+  }
+
+  .productivity-title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 155px;
+  }
+
+  .productivity-description-title {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+
+  .productivity-description-items {
+    width: 405px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+
+  .productivity-button a {
+    color: black;
+  }
+}

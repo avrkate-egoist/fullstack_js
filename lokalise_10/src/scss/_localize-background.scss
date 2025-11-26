@@ -1,0 +1,39 @@
+.localize-background {
+  background-color: #fff8e4;
+
+  .localize {
+    max-width: 1260px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    align-items: flex-start;
+    text-align: center;
+    justify-items: center;
+    gap: 110px;
+    row-gap: 80px;
+    margin: 0 auto;
+    padding-bottom: 170px;
+  }
+
+  .localize-title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .localize-title-icon {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .localize-title-icon-description {
+    width: 330px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

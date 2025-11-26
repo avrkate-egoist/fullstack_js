@@ -1,0 +1,76 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+  padding: 25px 51px;
+
+  .header-icon {
+    display: none;
+  }
+
+  .header-left {
+    @include flex(space-between, center, row, nowrap);
+    gap: 0;
+    gap: 42px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 10px;
+
+    .logo-container {
+      @include flex(normal, center, row, nowrap);
+      padding-right: 10px;
+      gap: 10px;
+    }
+  }
+
+  .header-buttons {
+    display: flex;
+    min-width: 250px;
+    flex-shrink: 0;
+
+    .header-button-1 {
+      width: 120px;
+      height: 45px;
+      border-radius: 0;
+      background-color: $bg-light-button;
+    }
+
+    .header-button-2 {
+      width: 120px;
+      height: 45px;
+      border-radius: 0;
+      border: none;
+      background-color: $bg-bright-button;
+      color: $bg-light-button;
+      margin-left: 10px;
+    }
+  }
+}
+
+.header-left-navigation {
+  @include flex(space-between, center, row, wrap);
+  list-style: none;
+  margin-right: 10px;
+  flex-grow: 1;
+  gap: 5%;
+
+  li {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-left-navigation {
+    display: none;
+  }
+
+  .header-icon {
+    display: flex;
+    width: 50px;
+  }
+
+  .header-left {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}

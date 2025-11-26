@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.companies {
+  padding: 110px 0;
+  background-color: $bg-companies;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .companies-logo {
+    @include flex(center, center, row, wrap);
+    padding: 20px 75px;
+    gap: 110px;
+  }
+
+  .companies-title {
+    padding-bottom: 70px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 720px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+}
