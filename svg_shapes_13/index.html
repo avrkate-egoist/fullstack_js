@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="elements">
+        <h1>Квадрат</h1>
+        <svg class="area" width="300" height="300">
+          <rect
+            x="50"
+            y="50"
+            width="200"
+            height="200"
+            style="fill: purple; stroke-width: 3; stroke: black"
+          />
+        </svg>
+      </div>
+      <div class="elements">
+        <h1>Прямокутник</h1>
+        <svg class="area" width="300" height="300">
+          <rect
+            x="50"
+            y="100"
+            width="200"
+            height="100"
+            style="
+              fill: rgb(115, 102, 188);
+              stroke-width: 7;
+              stroke: rgb(33, 40, 99);
+              opacity: 0.5;
+            "
+          />
+        </svg>
+      </div>
+      <div class="elements">
+        <h1>Коло</h1>
+        <svg class="area" width="300" height="300">
+          <defs>
+            <linearGradient
+              id="fillGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style="stop-color: rgb(102, 188, 151); stop-opacity: 1"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: rgb(188, 102, 151); stop-opacity: 1"
+              />
+            </linearGradient>
+
+            <radialGradient id="strokeGradient" cx="50%" cy="50%" r="90%">
+              <stop
+                offset="0%"
+                style="stop-color: rgb(207, 158, 230); stop-opacity: 1"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+              />
+            </radialGradient>
+          </defs>
+
+          <circle
+            cx="150"
+            cy="150"
+            r="80"
+            fill="url(#fillGradient)"
+            stroke="url(#strokeGradient)"
+            stroke-width="20"
+          />
+        </svg>
+      </div>
+      <div class="elements">
+        <h1>Еліпс</h1>
+        <svg class="area" width="300" height="300">
+          <ellipse cx="140" cy="150" rx="90" ry="50" fill="black" />
+          <ellipse cx="150" cy="150" rx="70" ry="40" fill="white" />
+          <ellipse cx="150" cy="150" rx="50" ry="30" fill="green" />
+          <ellipse cx="140" cy="150" rx="30" ry="20" fill="white" />
+        </svg>
+      </div>
+      <div class="elements">
+        <h1>Анімація</h1>
+        <div class="area">
+          <div class="main-text">Наведи на блок</div>
+
+          <div class="bar-container">
+            <span class="bar-text">Red</span>
+            <div class="bar red"></div>
+          </div>
+          <div class="bar-container">
+            <span class="bar-text">Orange</span>
+            <div class="bar orange"></div>
+          </div>
+          <div class="bar-container">
+            <span class="bar-text">Green</span>
+            <div class="bar green"></div>
+          </div>
+          <div class="bar-container">
+            <span class="bar-text">Blue</span>
+            <div class="bar blue"></div>
+          </div>
+          <div class="bar-container">
+            <span class="bar-text">Purple</span>
+            <div class="bar purple"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

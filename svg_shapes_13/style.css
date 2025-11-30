@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.area {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 5px;
+  position: relative;
+}
+
+.main-text {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.area:hover .main-text {
+  opacity: 0;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 40px;
+  height: 20px;
+  transition: height 0.6s ease;
+}
+
+.red {
+  background: #e63946;
+}
+.orange {
+  background: #f1a208;
+}
+.green {
+  background: #00a896;
+}
+.blue {
+  background: #457b9d;
+}
+.purple {
+  background: #6a4c93;
+}
+
+.area:hover .bar-text {
+  opacity: 1;
+}
+.area:hover .red {
+  height: 60px;
+}
+.area:hover .orange {
+  height: 150px;
+}
+.area:hover .green {
+  height: 270px;
+}
+.area:hover .blue {
+  height: 100px;
+}
+.area:hover .purple {
+  height: 200px;
+}
