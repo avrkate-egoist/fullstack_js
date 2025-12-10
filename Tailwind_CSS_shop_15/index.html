@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <header class="font-poppins container mx-auto max-w-7xl">
+      <nav
+        class="flex justify-between items-center py-[70px] text-base text-[#484848]">
+        <a href="#"
+          ><img
+            class="h-[40px]"
+            src="src/images/fasco-logo.svg"
+            alt="fasco-logo"
+        /></a>
+        <ul class="flex justify-between gap-[70px]">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Products</a></li>
+          <li>
+            <details class="cursor-pointer hover:cursor-pointer">
+              <summary>Pages</summary>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <div class="flex justify-between gap-5">
+          <button aria-label="search">
+            <img src="src/images/icon-search.svg" alt="search" />
+          </button>
+          <button aria-label="user">
+            <img src="src/images/icon-user.svg" alt="user" />
+          </button>
+          <button aria-label="Search">
+            <img src="src/images/icon-favorites.svg" alt="favorites" />
+          </button>
+          <button aria-label="shop-bag">
+            <img src="src/images/icon-shop-bag.svg" alt="shop-bag" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mx-auto max-w-7xl text-center pb-[98px]">
+      <h1 class="text-5xl pb-5 font-volkhov">Fashion</h1>
+      <div class="text-base flex justify-center gap-4 font-jost">
+        <a href="index.html" class="">Home</a>
+        <span>&gt;</span>
+        <a href="#">Fashion</a>
+      </div>
+    </div>
+
+    <section class="container mx-auto max-w-7xl flex">
+      <aside class="w-[320px]">
+        <h2 class="text-3xl font-volkhov pb-8">Filters</h2>
+
+        <section class="mb-[28px]">
+          <h3 class="font-volkhov text-lg pb-6">Size</h3>
+          <div class="font-jost flex flex-wrap gap-3 w-[160px]">
+            <button
+              class="flex items-center justify-center w-[42px] h-[42px] border rounded-md text-[#8A8A8A] border-[#8A8A8A] cursor-pointer hover:cursor-pointer hover:bg-gray-200 focus:bg-gray-900 focus:text-white">
+              S
+            </button>
+            <button
+              class="flex items-center justify-center w-[42px] h-[42px] border rounded-md text-[#8A8A8A] border-[#8A8A8A] cursor-pointer hover:cursor-pointer hover:bg-gray-200 focus:bg-gray-900 focus:text-white">
+              M
+            </button>
+            <button
+              class="flex items-center justify-center w-[42px] h-[42px] border rounded-md text-[#8A8A8A] border-[#8A8A8A] cursor-pointer hover:cursor-pointer hover:bg-gray-200 focus:bg-gray-900 focus:text-white">
+              L
+            </button>
+            <button
+              class="flex items-center justify-center w-[42px] h-[42px] border rounded-md text-[#8A8A8A] border-[#8A8A8A] cursor-pointer hover:cursor-pointer hover:bg-gray-200 focus:bg-gray-900 focus:text-white">
+              XL
+            </button>
+          </div>
+        </section>
+
+        <section class="mb-[28px] w-[320px]">
+          <h3 class="font-volkhov text-lg pb-6">Colors</h3>
+          <div class="flex flex-wrap gap-3">
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-red-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-orange-400 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-yellow-400 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-lime-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-green-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-emerald-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-teal-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-sky-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-blue-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-indigo-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-violet-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-purple-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-fuchsia-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+            <button
+              class="cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full bg-pink-500 hover:border-2 hover: border-gray-300 focus:border-5 focus:border-gray-300"></button>
+          </div>
+        </section>
+
+        <section class="mb-[28px]">
+          <h3 class="font-[Volkhov-Font] text-lg pb-6">Prices</h3>
+          <div
+            class="flex items-start flex-col gap-[10px] font-poppins text-[#8a8a8a]">
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              $0-$50
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              $50-$100
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              $100-$150
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              $150-$200
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              $300-$400
+            </button>
+          </div>
+        </section>
+
+        <section class="mb-[28px]">
+          <h3 class="font-[Volkhov-Font] text-lg pb-6">Brands</h3>
+          <div
+            class="font-poppins text-[#8a8a8a] flex flex-wrap gap-3 w-[200px]">
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Minimog
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Retrolie
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Brook
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Learts
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Vagabond
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Abby
+            </button>
+          </div>
+        </section>
+
+        <section class="mb-[28px]">
+          <h3 class="font-[Volkhov-Font] text-lg pb-6">Prices</h3>
+          <div
+            class="flex items-start flex-col gap-[10px] font-poppins text-[#8a8a8a]">
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              All products
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Best sellers
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              New arrivals
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Accessories
+            </button>
+          </div>
+        </section>
+
+        <section class="mb-[28px]">
+          <h3 class="font-[Volkhov-Font] text-lg pb-6">Brands</h3>
+          <div class="font-poppins text-[#8a8a8a] flex flex-wrap gap-3">
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Fashion
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Hats
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Sandal
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Belt
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Bags
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Snacker
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Denim
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Minimog
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Vagabond
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Sunglasses
+            </button>
+            <button
+              class="cursor-pointer hover:cursor-pointer hover:text-black focus:text-black">
+              Beachwear
+            </button>
+          </div>
+        </section>
+      </aside>
+
+      <main class="w-full">
+        <div class="flex justify-between mb-5">
+          <form method="get">
+            <select class="font-volkhov" name="filter" id="filter">
+              <option value="bestselling">Best Selling</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+            </select>
+          </form>
+          <div>
+            <button>
+              <img
+                src="src/images/button-list-view.svg"
+                alt="button-list-view" />
+            </button>
+            <button>
+              <img
+                src="src/images/button-2-column-grid.svg"
+                alt="button-2-column-grid" />
+            </button>
+            <button>
+              <img
+                src="src/images/button-3-column-grid.svg"
+                alt="button-3-column-grid" />
+            </button>
+            <button>
+              <img
+                src="src/images/button-4-column-grid.svg"
+                alt="button-4-column-grid" />
+            </button>
+            <button>
+              <img
+                src="src/images/button-5-column-grid.svg"
+                alt="button-5-column-grid" />
+            </button>
+          </div>
+        </div>
+
+        <section class="grid grid-cols-3 gap-7 mb-20">
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+          <article>
+            <img
+              class="mb-5 w-full"
+              src="src/images/rounded-hat.png"
+              alt="rounded-hat" />
+            <h3 class="mb-1 font-volkhov">Rounded Hat</h3>
+            <p class="mb-5 font-jost">$8.00</p>
+            <form class="flex gap-3">
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="yellow"
+                  class="hidden peer"
+                  checked />
+                <span
+                  class="block w-7 h-7 rounded-full bg-yellow-400 cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="color"
+                  value="black"
+                  class="hidden peer" />
+                <span
+                  class="block w-7 h-7 rounded-full bg-black cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4"></span>
+              </label>
+            </form>
+          </article>
+        </section>
+
+        <nav class="flex justify-center gap-2 mb-18">
+          <button
+            class="w-11 h-11 rounded-full font-jost bg-white text-black hover:border-1 hover:border-black focus:bg-gray-100">
+            <a href="#">1</a>
+          </button>
+          <button
+            class="w-11 h-11 rounded-full font-jost bg-white text-black hover:border-1 hover:border-black focus:bg-gray-100">
+            <a href="#">2</a>
+          </button>
+          <button
+            class="w-11 h-11 rounded-full font-jost bg-white text-black hover:border-1 hover:border-black focus:bg-gray-100">
+            <a href="#">3</a>
+          </button>
+          <button
+            class="w-11 h-11 rounded-full font-jost bg-white text-black hover:border-1 hover:border-black focus:bg-gray-100">
+            <a href="#">»</a>
+          </button>
+        </nav>
+      </main>
+    </section>
+
+    <section class="bg-[#DADADA] flex justify-center items-center gap-8">
+      <img src="src/images/bg-style.png" alt="bg-style" />
+      <div class="font-poppins space-y-5 w-[865px]">
+        <p class="text-[#767676]">Women Collection</p>
+        <h2 class="font-volkhov text-[#484848] text-5xl">Peaky Blinders</h2>
+        <p class="underline decoration-solid">DESCRIPTION</p>
+        <p class="text-[#767676] max-w-[515px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Scelerisque duis.
+        </p>
+        <div class="flex items-center gap-4">
+          <p class="text-[#767676]">Size:</p>
+          <button class="text-white bg-black px-[20px] py-[6px] rounded-[10px]">
+            M
+          </button>
+        </div>
+        <p class="text-[28px]">$100.00</p>
+        <button
+          class="text-white bg-black px-[70px] py-[20px] rounded-[10px] cursor cursor-pointer">
+          Buy Now
+        </button>
+      </div>
+    </section>
+
+    <section class="flex justify-between container mx-auto py-18">
+      <div class="flex gap-4">
+        <img src="src/images/icon-high-quality.svg" alt="high-quality" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">High Quality</h3>
+          <p>Crafted from top materials</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img
+          src="src/images/icon-warrany-protection.svg"
+          alt="warrany-protection" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">Warrany Protection</h3>
+          <p>Over 2 years</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="src/images/icon-free-shipping.svg" alt="free-shipping" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">Free Shipping</h3>
+          <p>Order over 150 $</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="src/images/icon-support.svg" alt="support" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">24 / 7 Support</h3>
+          <p>Dedicated support</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="flex flex-col items-center text-center py-24 bg-gradient-to-b from-[#f8f8f8] to-transparent">
+        <h2 class="font-volkhov text-5xl text-[#484848] mb-5">
+          Follow Us On Instagram
+        </h2>
+        <p class="font-poppins max-w-[615px] text-[#8A8A8A]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin
+        </p>
+      </div>
+      <div class="overflow-x-auto mb-[96px] whitespace-nowrap">
+        <img
+          src="src/images/scroll-photo-1.png"
+          alt="scroll-photo"
+          class="inline-block" /><img
+          src="src/images/scroll-photo-2.png"
+          alt="scroll-photo"
+          class="inline-block" /><img
+          src="src/images/scroll-photo-3.png"
+          alt="scroll-photo"
+          class="inline-block" /><img
+          src="src/images/scroll-photo-4.png"
+          alt="scroll-photo"
+          class="inline-block" /><img
+          src="src/images/scroll-photo-5.png"
+          alt="scroll-photo"
+          class="inline-block" /><img
+          src="src/images/scroll-photo-6.png"
+          alt="scroll-photo"
+          class="inline-block" /><img
+          src="src/images/scroll-photo-7.png"
+          alt="scroll-photo"
+          class="inline-block" />
+      </div>
+    </section>
+
+    <section
+      class="mx-auto flex items-center text-center justify-center font-poppins mb-12 gap-8">
+      <img src="src/images/newsletter-men.png" alt="newsletter" />
+      <div class="flex flex-col">
+        <h2 class="font-volkhov text-5xl text-[#484848] mb-5">
+          Subscribe To Our Newsletter
+        </h2>
+        <p class="text-[#8A8A8A] max-w-[615px] mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin
+        </p>
+        <input
+          type="email"
+          placeholder="michael@ymail.com"
+          class="text-[22px] px-9 py-7 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          required />
+        <div class="bg-gradient-to-b from-[#f2f2f2] to-transparent py-8">
+          <button class="text-white bg-black px-11 py-5 rounded-[10px] px-5">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+      <img src="src/images/Newsletter-women.png" alt="newsletter" />
+    </section>
+    <hr class="border-t-2 border-gray-300 mb-8" />
+
+    <footer class="container mx-auto max-w-7xl font-poppins text-[#484848]">
+      <div class="flex justify-between">
+        <img class="h-8" src="src/images/fasco-logo.svg" alt="fasco-logo" />
+        <nav>
+          <ul class="flex gap-[70px]">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Shop</li>
+            <li>
+              <details class="cursor-pointer hover:cursor-pointer">
+                <summary>Pages</summary>
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="mb-5 mt-12 text-xs flex justify-center">
+        Copyright © 2022 FASCO . All Rights Reseved.
+      </p>
+    </footer>
+  </body>
+</html>
