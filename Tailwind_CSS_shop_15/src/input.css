@@ -50,6 +50,14 @@
 .size-btn-active {
   @apply focus:bg-gray-900 focus:text-white;
 }
+
+.product-size-btn {
+  @apply flex items-center justify-center w-[45px] h-[45px] border rounded-md text-black border-gray-200 cursor-pointer hover:cursor-pointer hover:bg-gray-200;
+}
+.product-size-btn-active {
+  @apply focus:bg-gray-900 focus:text-white;
+}
+
 .colors-btn {
   @apply cursor-pointer hover:cursor-pointer w-[30px] h-[30px] rounded-full hover:border-2 hover:border-gray-300;
 }
@@ -64,6 +72,10 @@
 }
 .item-color-filter {
   @apply block w-7 h-7 rounded-full cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4;
+}
+
+.product-item-color-filter {
+  @apply block w-10 h-10 rounded-full cursor-pointer hover:border-2 hover:border-gray-300 peer-checked:hover:border-0 peer-checked:outline peer-checked:outline-1 peer-checked:outline-black peer-checked:outline-offset-4;
 }
 
 .filters-open {

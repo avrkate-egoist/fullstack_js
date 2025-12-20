@@ -21,22 +21,22 @@
         <div class="flex justify-between">
           <div class="hidden md:flex justify-between items-center">
             <ul class="flex justify-between gap-12 mr-6">
-              <li>Home</li>
-              <li>Deals</li>
-              <li>New Arrivals</li>
-              <li>Packages</li>
-              <li>Sign in</li>
+              <li class="cursor-pointer">Home</li>
+              <li class="cursor-pointer">Deals</li>
+              <li class="cursor-pointer">New Arrivals</li>
+              <li class="cursor-pointer">Packages</li>
+              <li class="cursor-pointer">Sign in</li>
             </ul>
           </div>
           <button
-            class="bg-black text-white px-11 py-5 rounded-[10px] shadow-2xl">
+            class="bg-black text-white px-11 py-5 rounded-[10px] shadow-2xl cursor-pointer">
             Sign Up
           </button>
         </div>
       </nav>
     </header>
 
-    <aside class="max-w-7xl mx-auto py-5">
+    <aside class="max-w-7xl mx-auto py-5 cursor-pointer">
       <img class="w-14" src="../src/images/icon-bag.svg" alt="bag" />
     </aside>
 
@@ -51,7 +51,8 @@
         <p class="font-poppins text-dark text-xl tracking-widest">
           NEW COLLECTION
         </p>
-        <button class="bg-black text-white w-52 h-12 rounded-[10px]">
+        <button
+          class="bg-black text-white w-52 h-12 rounded-[10px] cursor-pointer">
           SHOP NOW
         </button>
         <img src="../src/images/sale-buttom.png" alt="sale-buttom-photo" />
@@ -61,7 +62,8 @@
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto flex justify-between flex-wrap my-20">
+    <section
+      class="max-w-7xl mx-auto flex justify-between flex-wrap my-20 gap-5">
       <img src="../src/images/logo-chanel.svg" alt="chanel" />
       <img src="../src/images/logo-louis-vuitton.svg" alt="louis-vuitton" />
       <img src="../src/images/logo-prada.svg" alt="prada" />
@@ -70,7 +72,8 @@
     </section>
 
     <section class="bg-[#fafafa]">
-      <div class="py-36 flex justify-between mr-">
+      <div
+        class="py-36 flex justify-start max-w-7xl mx-auto gap-5 flex-col xl:flex-row">
         <div>
           <div>
             <h2 class="font-volkhov text-dark text-5xl mb-5">
@@ -82,12 +85,12 @@
               duis ultrices sollicitudin
             </p>
             <button
-              class="bg-black text-white font-poppins py-5 px-[70px] rounded-[10px] shadow-2xl">
+              class="bg-black text-white font-poppins py-5 px-[70px] rounded-[10px] shadow-2xl cursor-pointer">
               Buy Now
             </button>
           </div>
 
-          <div>
+          <div class="h-[260px]">
             <h3 class="font-poppins text-dark text-[28px] py-8">
               Hurry, Before It’s Too Late!
             </h3>
@@ -125,21 +128,32 @@
         </div>
 
         <div class="flex items-end gap-4">
-          <button class="shadow-2xl rounded-full">
+          <button class="shadow-2xl rounded-full cursor-pointer">
             <img src="../src/images/arrow-left.svg" alt="arrow-left" />
           </button>
-          <button class="shadow-2xl rounded-full">
+          <button class="shadow-2xl rounded-full cursor-pointer">
             <img src="../src/images/arrow-right.svg" alt="arrow-left" />
           </button>
         </div>
 
-        <div class="overflow-hidden w-[1024px]">
-          <div class="flex gap-5">
+        <div class="relative grow pb-[450px]">
+          <div class="flex gap-5 absolute top-0 bottom-0 w-[1300px]">
             <div>
               <img src="../src/images/carousal-photo.png" alt="carousal" />
+              <div
+                class="absolute bottom-3 left-5 bg-white text-dark px-8 py-7 font-poppins">
+                <p>01 — Spring Sale</p>
+                <p class="text-[28px]">30% OFF</p>
+              </div>
             </div>
-            <div>
+            <div class="flex flex-col items-start justify-between">
               <img src="../src/images/carousal-photo1.png" alt="carousal" />
+              <div class="flex gap-2 justify-center mt-8">
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+              </div>
             </div>
             <div>
               <img src="../src/images/carousal-photo2.png" alt="carousal" />
@@ -164,157 +178,170 @@
 
       <section class="flex justify-center gap-8 mb-12">
         <button
-          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black btn-active">
+          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black btn-active cursor-pointer">
           Men’s Fashion
         </button>
         <button
-          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black">
+          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black cursor-pointer">
           Women’s Fashion
         </button>
         <button
-          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black">
+          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black cursor-pointer">
           Women Accessories
         </button>
         <button
-          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black">
+          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black cursor-pointer">
           Men Accessories
         </button>
         <button
-          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black">
+          class="w-[205px] h-14 bg-[#fafafa] font-poppins text-dark rounded-[10px] hover:text-black cursor-pointer">
           Discount Deals
         </button>
       </section>
 
       <section
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[60px]">
-        <div class="p-5 bg-white shadow-xl rounded-[10px]">
-          <div class="w-fit mx-auto">
-            <img
-              src="../src/images/arrivals-grid-1.png"
-              alt="new-arrivals"
-              class="mx-auto" />
-            <div class="flex justify-between my-3 font-poppins text-dark">
-              <div>
-                <h3 class="text-xl font-bold">Shiny Dress</h3>
-                <p class="text-light text-xs mb-6">Al Karam</p>
-                <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
-                <p class="text-2xl font-bold">$95.50</p>
-              </div>
-              <div class="flex flex-col justify-between text-right">
-                <p class="text-amber-500 text-2xl">★★★★★</p>
-                <p class="text-red-600 text-xs">Almost Sold Out</p>
+        <a href="#">
+          <div class="p-5 bg-white shadow-xl rounded-[10px]">
+            <div class="w-fit mx-auto">
+              <img
+                src="../src/images/arrivals-grid-1.png"
+                alt="new-arrivals"
+                class="mx-auto" />
+              <div class="flex justify-between my-3 font-poppins text-dark">
+                <div>
+                  <h3 class="text-xl font-bold">Shiny Dress</h3>
+                  <p class="text-light text-xs mb-6">Al Karam</p>
+                  <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
+                  <p class="text-2xl font-bold">$95.50</p>
+                </div>
+                <div class="flex flex-col justify-between text-right">
+                  <p class="text-amber-500 text-2xl">★★★★★</p>
+                  <p class="text-red-600 text-xs">Almost Sold Out</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="p-5 bg-white shadow-xl rounded-[10px]">
-          <div class="w-fit mx-auto">
-            <img
-              src="../src/images/arrivals-grid-2.png"
-              alt="new-arrivals"
-              class="mx-auto" />
-            <div class="flex justify-between my-3 font-poppins text-dark">
-              <div>
-                <h3 class="text-xl font-bold">Long Dress</h3>
-                <p class="text-light text-xs mb-6">Al Karam</p>
-                <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
-                <p class="text-2xl font-bold">$110.50</p>
-              </div>
-              <div class="flex flex-col justify-between text-right">
-                <p class="text-amber-500 text-2xl">★★★★★</p>
-                <p class="text-red-600 text-xs">Almost Sold Out</p>
+        <a href="#">
+          <div class="p-5 bg-white shadow-xl rounded-[10px]">
+            <div class="w-fit mx-auto">
+              <img
+                src="../src/images/arrivals-grid-2.png"
+                alt="new-arrivals"
+                class="mx-auto" />
+              <div class="flex justify-between my-3 font-poppins text-dark">
+                <div>
+                  <h3 class="text-xl font-bold">Long Dress</h3>
+                  <p class="text-light text-xs mb-6">Al Karam</p>
+                  <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
+                  <p class="text-2xl font-bold">$110.50</p>
+                </div>
+                <div class="flex flex-col justify-between text-right">
+                  <p class="text-amber-500 text-2xl">★★★★★</p>
+                  <p class="text-red-600 text-xs">Almost Sold Out</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="p-5 bg-white shadow-xl rounded-[10px]">
-          <div class="w-fit mx-auto">
-            <img
-              src="../src/images/arrivals-grid-3.png"
-              alt="new-arrivals"
-              class="mx-auto" />
-            <div class="flex justify-between my-3 font-poppins text-dark">
-              <div>
-                <h3 class="text-xl font-bold">Full Sweater</h3>
-                <p class="text-light text-xs mb-6">Al Karam</p>
-                <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
-                <p class="text-2xl font-bold">$80</p>
-              </div>
-              <div class="flex flex-col justify-between text-right">
-                <p class="text-amber-500 text-2xl">★★★★★</p>
-                <p class="text-red-600 text-xs">Almost Sold Out</p>
+        <a href="#">
+          <div class="p-5 bg-white shadow-xl rounded-[10px]">
+            <div class="w-fit mx-auto">
+              <img
+                src="../src/images/arrivals-grid-3.png"
+                alt="new-arrivals"
+                class="mx-auto" />
+              <div class="flex justify-between my-3 font-poppins text-dark">
+                <div>
+                  <h3 class="text-xl font-bold">Full Sweater</h3>
+                  <p class="text-light text-xs mb-6">Al Karam</p>
+                  <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
+                  <p class="text-2xl font-bold">$80</p>
+                </div>
+                <div class="flex flex-col justify-between text-right">
+                  <p class="text-amber-500 text-2xl">★★★★★</p>
+                  <p class="text-red-600 text-xs">Almost Sold Out</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="p-5 bg-white shadow-xl rounded-[10px]">
-          <div class="w-fit mx-auto">
-            <img
-              src="../src/images/arrivals-grid-4.png"
-              alt="new-arrivals"
-              class="mx-auto" />
-            <div class="flex justify-between my-3 font-poppins text-dark">
-              <div>
-                <h3 class="text-xl font-bold">White Dress</h3>
-                <p class="text-light text-xs mb-6">Al Karam</p>
-                <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
-                <p class="text-2xl font-bold">$75</p>
-              </div>
-              <div class="flex flex-col justify-between text-right">
-                <p class="text-amber-500 text-2xl">★★★★★</p>
-                <p class="text-red-600 text-xs">Almost Sold Out</p>
+        <a href="#">
+          <div class="p-5 bg-white shadow-xl rounded-[10px]">
+            <div class="w-fit mx-auto">
+              <img
+                src="../src/images/arrivals-grid-4.png"
+                alt="new-arrivals"
+                class="mx-auto" />
+              <div class="flex justify-between my-3 font-poppins text-dark">
+                <div>
+                  <h3 class="text-xl font-bold">White Dress</h3>
+                  <p class="text-light text-xs mb-6">Al Karam</p>
+                  <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
+                  <p class="text-2xl font-bold">$75</p>
+                </div>
+                <div class="flex flex-col justify-between text-right">
+                  <p class="text-amber-500 text-2xl">★★★★★</p>
+                  <p class="text-red-600 text-xs">Almost Sold Out</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="p-5 bg-white shadow-xl rounded-[10px]">
-          <div class="w-fit mx-auto">
-            <img
-              src="../src/images/arrivals-grid-5.png"
-              alt="new-arrivals"
-              class="mx-auto" />
-            <div class="flex justify-between my-3 font-poppins text-dark">
-              <div>
-                <h3 class="text-xl font-bold">Colorful Dress</h3>
-                <p class="text-light text-xs mb-6">Al Karam</p>
-                <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
-                <p class="text-2xl font-bold">$50.50</p>
-              </div>
-              <div class="flex flex-col justify-between text-right">
-                <p class="text-amber-500 text-2xl">★★★★★</p>
-                <p class="text-red-600 text-xs">Almost Sold Out</p>
+        <a href="#">
+          <div class="p-5 bg-white shadow-xl rounded-[10px]">
+            <div class="w-fit mx-auto">
+              <img
+                src="../src/images/arrivals-grid-5.png"
+                alt="new-arrivals"
+                class="mx-auto" />
+              <div class="flex justify-between my-3 font-poppins text-dark">
+                <div>
+                  <h3 class="text-xl font-bold">Colorful Dress</h3>
+                  <p class="text-light text-xs mb-6">Al Karam</p>
+                  <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
+                  <p class="text-2xl font-bold">$50.50</p>
+                </div>
+                <div class="flex flex-col justify-between text-right">
+                  <p class="text-amber-500 text-2xl">★★★★★</p>
+                  <p class="text-red-600 text-xs">Almost Sold Out</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="p-5 bg-white shadow-xl rounded-[10px]">
-          <div class="w-fit mx-auto">
-            <img
-              src="../src/images/arrivals-grid-6.png"
-              alt="new-arrivals"
-              class="mx-auto" />
-            <div class="flex justify-between my-3 font-poppins text-dark">
-              <div>
-                <h3 class="text-xl font-bold">White Shirt</h3>
-                <p class="text-light text-xs mb-6">Al Karam</p>
-                <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
-                <p class="text-2xl font-bold">$45</p>
-              </div>
-              <div class="flex flex-col justify-between text-right">
-                <p class="text-amber-500 text-2xl">★★★★★</p>
-                <p class="text-red-600 text-xs">Almost Sold Out</p>
+        <a href="#">
+          <div class="p-5 bg-white shadow-xl rounded-[10px]">
+            <div class="w-fit mx-auto">
+              <img
+                src="../src/images/arrivals-grid-6.png"
+                alt="new-arrivals"
+                class="mx-auto" />
+              <div class="flex justify-between my-3 font-poppins text-dark">
+                <div>
+                  <h3 class="text-xl font-bold">White Shirt</h3>
+                  <p class="text-light text-xs mb-6">Al Karam</p>
+                  <p class="text-xs font-bold mb-6">(4.1k) Customer Reviews</p>
+                  <p class="text-2xl font-bold">$45</p>
+                </div>
+                <div class="flex flex-col justify-between text-right">
+                  <p class="text-amber-500 text-2xl">★★★★★</p>
+                  <p class="text-red-600 text-xs">Almost Sold Out</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </section>
+
       <button
-        class="font-poppins text-white bg-black py-5 px-16 rounded-[10px] flex justify-center mx-auto mt-12 shadow-2xl">
+        class="font-poppins text-white bg-black py-5 px-16 rounded-[10px] flex justify-center mx-auto mt-12 shadow-2xl cursor-pointer">
         View More
       </button>
     </main>
@@ -432,74 +459,132 @@
         </p>
       </div>
 
-      <div class="w-full">
-        <div class="relative mx-auto">
+      <div
+        class="grid grid-cols-3 items-center justify-items-center max-w-[1440px] mx-auto font-poppins text-dark">
+        <div class="z-0">
           <div
-            class="flex items-center justify-center overflow-hidden font-poppins text-dark"
-            id="carousel-track">
-            <div class="w-[645px]">
-              <div
-                class="bg-white shadow-lg rounded-[10px] py-10 px-9 px-[50px] flex justify-between gap-16">
-                <img src="../src/images/response-1.png" />
-                <div>
-                  <p class="text-xs">
-                    "Items That I ordered were the best investment I ever made.
-                    I can't say enough about your quality service."
-                  </p>
-                  <p class="my-4 text-lg text-amber-500">★★★★★</p>
-                  <hr class="w-43" />
-                  <p class="py-3 font-volkhov text-2xl">Suzan B.</p>
-                  <p class="text-xs">UI Designer</p>
-                </div>
-              </div>
+            class="bg-white shadow-lg rounded-[10px] p-10 flex gap-10 w-[645px]">
+            <img
+              class="h-[195px] w-[195px]"
+              src="../src/images/response-1.png" />
+            <div>
+              <p class="text-xs">
+                "Items That I ordered were the best investment I ever made. I
+                can't say enough about your quality service."
+              </p>
+              <p class="my-4 text-lg text-amber-500">★★★★★</p>
+              <hr class="w-1/2" />
+              <p class="py-3 font-volkhov text-2xl">Suzan B.</p>
+              <p class="text-xs">UI Designer</p>
             </div>
+          </div>
+        </div>
 
-            <div class="w-[860px] z-10">
-              <div
-                class="bg-white shadow-lg rounded-[10px] py-10 px-9 px-[50px] flex justify-between gap-16">
-                <img src="../src/images/response-2.png" />
-                <div>
-                  <p>
-                    "You won't regret it. I would like to personally thank you
-                    for your outstanding product. Absolutely wonderful!"
-                  </p>
-                  <p class="my-4 text-2xl text-amber-500">★★★★★</p>
-                  <hr class="w-43" />
-                  <p class="py-3 font-volkhov text-[32px]">James K.</p>
-                  <p>Traveler</p>
-                </div>
-              </div>
+        <div class="z-10">
+          <div
+            class="bg-white shadow-2xl rounded-[10px] p-10 flex gap-10 w-[864px]">
+            <img
+              class="h-[265px] w-[265px]"
+              src="../src/images/response-2.png" />
+            <div>
+              <p>
+                "You won't regret it. I would like to personally thank you for
+                your outstanding product. Absolutely wonderful!"
+              </p>
+              <p class="my-4 text-2xl text-amber-500">★★★★★</p>
+              <hr class="w-1/2" />
+              <p class="py-3 font-volkhov text-[32px]">James K.</p>
+              <p>Traveler</p>
             </div>
+          </div>
+        </div>
 
-            <div class="w-[645px]">
-              <div
-                class="bg-white shadow-lg rounded-[10px] py-10 px-9 px-[50px] flex justify-between gap-16">
-                <img src="../src/images/response-3.png" />
-                <div>
-                  <p class="text-xs">
-                    "Just what I was looking for. Thank you for making it
-                    painless, pleasant and most of all hassle free! All products
-                    are great."
-                  </p>
-                  <p class="my-4 text-lg text-amber-500">★★★★★</p>
-                  <hr class="w-43" />
-                  <p class="py-3 font-volkhov text-2xl">Megen W.</p>
-                  <p class="text-xs">Marketer</p>
-                </div>
-              </div>
+        <div class="z-0">
+          <div
+            class="bg-white shadow-lg rounded-[10px] p-10 flex gap-10 w-[645px]">
+            <img
+              class="h-[195px] w-[195px]"
+              src="../src/images/response-3.png" />
+            <div>
+              <p class="text-xs">
+                "Just what I was looking for. Thank you for making it painless,
+                pleasant and most of all hassle free! All products are great."
+              </p>
+              <p class="my-4 text-lg text-amber-500">★★★★★</p>
+              <hr class="w-1/2" />
+              <p class="py-3 font-volkhov text-2xl">Megen W.</p>
+              <p class="text-xs">Marketer</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="flex justify-center gap-4 py-14">
-        <button class="rounded-full shadow-2xl">
-          <img src="../src/images/arrow-left.svg" alt="arrow-left" />
+        <button class="rounded-full shadow-2xl cursor-pointer">
+          <img
+            class="flex-shrink-0 h-auto w-auto"
+            src="../src/images/arrow-left.svg"
+            alt="arrow-left" />
         </button>
-        <button class="rounded-full shadow-2xl">
+        <button class="rounded-full shadow-2xl cursor-pointer">
           <img src="../src/images/arrow-right.svg" alt="arrow-left" />
         </button>
       </div>
     </section>
+
+    <section
+      class="mx-auto flex items-center text-center justify-center font-poppins mb-12 gap-8 mt-[150px]">
+      <div class="hidden md:block">
+        <img src="../src/images/newsletter-men.png" alt="newsletter" />
+      </div>
+
+      <div class="flex flex-col">
+        <h2 class="font-volkhov text-5xl text-dark mb-5">
+          Subscribe To Our Newsletter
+        </h2>
+        <p class="text-light max-w-[615px] mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin
+        </p>
+        <input
+          type="email"
+          placeholder="michael@ymail.com"
+          class="text-[22px] px-9 py-7 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          required />
+        <div class="bg-gradient-to-b from-[#f2f2f2] to-transparent py-8">
+          <button
+            class="text-white bg-black px-11 py-5 rounded-[10px] px-5 shadow-2xl cursor-pointer">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img src="../src/images/Newsletter-women.png" alt="newsletter" />
+      </div>
+    </section>
+    <hr class="border-t-2 border-gray-300 mb-8" />
+
+    <footer class="container mx-auto max-w-7xl font-poppins text-dark">
+      <div class="flex justify-between flex-wrap">
+        <a href="../pages/homepage.html">
+          <img
+            class="h-8 mb-8 mr-8 cursor-pointer"
+            src="../src/images/fasco-logo.svg"
+            alt="fasco-logo" />
+        </a>
+        <nav>
+          <ul class="flex gap-[70px]">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Contacts</li>
+          </ul>
+        </nav>
+      </div>
+      <p class="mb-5 mt-12 text-xs flex justify-center">
+        Copyright © 2022 FASCO . All Rights Reseved.
+      </p>
+    </footer>
   </body>
 </html>

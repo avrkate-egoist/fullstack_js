@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="p-5">
+    <header class="font-poppins container mx-auto max-w-7xl">
+      <nav class="flex justify-between items-center py-16 text-base text-dark">
+        <button class="md:hidden cursor-pointer" aria-label="menu">
+          <img class="w-8" src="../src/images/icon-burg.svg" alt="menu" />
+        </button>
+        <a href="../pages/homepage.html"
+          ><img
+            class="h-10"
+            src="../src/images/fasco-logo.svg"
+            alt="fasco-logo"
+        /></a>
+        <ul class="hidden md:flex justify-between w-[430px] px-8">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="flex justify-between gap-5">
+          <button aria-label="search">
+            <img src="../src/images/icon-search.svg" alt="search" />
+          </button>
+          <button aria-label="user">
+            <img src="../src/images/icon-user.svg" alt="user" />
+          </button>
+          <button aria-label="Search">
+            <img src="../src/images/icon-favorites.svg" alt="favorites" />
+          </button>
+          <button aria-label="shop-bag">
+            <img src="../src/images/icon-shop-bag.svg" alt="shop-bag" />
+          </button>
+        </div>
+      </nav>
+
+      <nav>
+        <ul class="hidden flex justify-between w-[430px] px-8 text-dark">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="mx-auto max-w-7xl flex justify-between gap-20">
+      <div class="flex gap-6">
+        <div class="flex flex-col w-14 gap-4">
+          <button
+            class="cursor-pointer hover:border-4 hover:border-gray-300 focus:outline focus:outline-2 focus:outline-black focus:outline-offset-5">
+            <img
+              src="../src/images/product-1-oversized-t-shirt-red.png"
+              alt="oversized-t-shirt-red" />
+          </button>
+          <button class="cursor-pointer hover:border-4 hover:border-gray-300">
+            <img
+              src="../src/images/product-1-oversized-t-shirt-black.png"
+              alt="oversized-t-shirt-black" />
+          </button>
+          <button class="cursor-pointer hover:border-4 hover:border-gray-300">
+            <img
+              src="../src/images/product-1-oversized-t-shirt-green.png"
+              alt="oversized-t-shirt-green" />
+          </button>
+        </div>
+        <div>
+          <img
+            src="../src/images/product-1-oversized-t-shirt-red.png"
+            alt="oversized-t-shirt-red" />
+        </div>
+      </div>
+      <div class="flex-1">
+        <div>
+          <p class="text-light text-[12px] font-volkhov mb-3">FASCO</p>
+          <h2 class="text-3xl font-volkhov mb-1">Oversized T-shirt</h2>
+          <p class="font-jost mb-5">★★★★☆ (3)</p>
+        </div>
+        <div class="flex items-center gap-3 mb-9">
+          <p class="font-volkhov text-2xl">$11.00</p>
+          <p class="line-through text-light">$14.00</p>
+          <p
+            class="font-jost bg-[#DA3F3F] text-white text-xs rounded-full px-2 py-1">
+            Save 33%
+          </p>
+        </div>
+        <div class="flex items-center gap-2 font-poppins text-light mb-8">
+          <img src="../src/images/icon-eye.svg" alt="icon-eye" />
+          <p>24 people are viewing this right now</p>
+        </div>
+
+        <div
+          class="flex items-center justify-between bg-[#FDEFEE] p-4 gap-4 flex-wrap mb-[30px] rounded-md">
+          <h2 class="text-[#FF706B] font-volkhov text-lg">
+            Hurry up! Sale ends in:
+          </h2>
+          <div
+            class="flex items-center gap-4 text-[#FF706B] font-jost text-xl font-bold gap-4">
+            <div>00</div>
+            <span>:</span>
+            <div>00</div>
+            <span>:</span>
+            <div>00</div>
+            <span>:</span>
+            <div>00</div>
+          </div>
+        </div>
+        <div class="mb-[30px]">
+          <p class="font-jost text-light mb-[13px]">
+            Only <strong>9</strong> item(s) left in stock!
+          </p>
+          <div class="w-full h-1 bg-gray-300 rounded">
+            <div class="h-full bg-red-500 rounded" style="width: 9%"></div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h3 class="font-volkhov font-bold pb-4">Color: Blue</h3>
+          <div class="font-jost flex gap-3">
+            <button class="product-size-btn product-size-btn-active">M</button>
+            <button class="product-size-btn">L</button>
+            <button class="product-size-btn">XL</button>
+            <button class="product-size-btn">XXL</button>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h3 class="font-volkhov font-bold pb-4">Size: M</h3>
+          <form class="flex gap-3">
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="yellow"
+                class="hidden peer"
+                checked />
+              <span class="bg-red-600 product-item-color-filter"></span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="black"
+                class="hidden peer" />
+              <span class="bg-black product-item-color-filter"></span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="black"
+                class="hidden peer" />
+              <span class="bg-lime-500 product-item-color-filter"></span>
+            </label>
+          </form>
+        </div>
+        <div class="mb-16">
+          <h3 class="font-volkhov font-bold pb-3">Quantity</h3>
+          <div class="flex items-center gap-8">
+            <div
+              class="flex items-center rounded-md border-1 border-gray-300 gap-4">
+              <button class="cursor-pointer py-3 px-4">
+                <img src="../src/images/minus.svg" alt="minus" />
+              </button>
+              <p class="font-jost py-3">1</p>
+              <button class="cursor-pointer py-3 px-5">
+                <img src="../src/images/plus.svg" alt="plus" />
+              </button>
+            </div>
+            <div class="flex-1">
+              <button
+                class="cursor-pointer border-1 border-black w-full py-3 rounded-md font-volkhov">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-9 font-jost mb-5">
+          <div class="flex gap-2 items-center cursor-pointer">
+            <img src="../src/images/icon-compare.svg" alt="compare" />
+            <p>Compare</p>
+          </div>
+          <div class="flex gap-2 items-center cursor-pointer">
+            <img
+              src="../src/images/icon-ask-a-question.svg"
+              alt="ask-a-question" />
+            <p>Ask a question</p>
+          </div>
+          <div class="flex gap-2 items-center cursor-pointer">
+            <img src="../src/images/icon-share.svg" alt="share" />
+            <p>Share</p>
+          </div>
+        </div>
+        <hr class="border-gray-300 mb-8" />
+
+        <div class="flex items-center gap-2 mb-[10px]">
+          <img src="../src/images/icon-delivery.svg" alt="delivery" />
+          <p class="font-volkhov font-bold">Estimated Delivery:</p>
+          <p class="font-jost">Jul 30 - Aug 03</p>
+        </div>
+        <div class="flex items-center gap-2 mb-8">
+          <img
+            src="../src/images/icon-shipping-return.svg"
+            alt="shipping-return" />
+          <p class="font-volkhov font-bold">Free Shipping & Returns:</p>
+          <p class="font-jost">On all orders over $75</p>
+        </div>
+
+        <div class="flex flex-col items-center bg-[#F8F8F8] py-5 gap-5 mb-14">
+          <img src="../src/images/bank-card.png" alt="bank-card" />
+          <p class="font-volkhov">Guarantee safe & secure checkout</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-style bg-no-repeat bg-center bg-cover max-w-[1920px] mx-auto flex items-center justify-center xl: flex-wrap">
+      <div>
+        <img src="../src/images/bg-style-girl.png" alt="style-girl" />
+      </div>
+
+      <div
+        class="font-poppins space-y-5 max-w-[470px] p-5 bg-white xl:bg-transparent">
+        <p class="text-[#767676]">Women Collection</p>
+        <h2 class="font-volkhov text-dark text-5xl">Peaky Blinders</h2>
+        <p class="underline decoration-solid">DESCRIPTION</p>
+        <p class="text-[#767676]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Scelerisque duis.
+        </p>
+        <div class="flex items-center gap-4">
+          <p class="text-[#767676]">Size:</p>
+          <button class="text-white bg-black px-[20px] py-[6px] rounded-[10px]">
+            M
+          </button>
+        </div>
+        <p class="text-[28px]">$100.00</p>
+        <button
+          class="text-white bg-black px-[70px] py-[20px] rounded-[10px] cursor-pointer shadow-2xl">
+          Buy Now
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="flex justify-between py-18 flex-wrap gap-6 items-center max-w-[1280px] mx-auto">
+      <div class="flex gap-4">
+        <img src="../src/images/icon-high-quality.svg" alt="high-quality" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">High Quality</h3>
+          <p>Crafted from top materials</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img
+          src="../src/images/icon-warrany-protection.svg"
+          alt="warrany-protection" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">Warrany Protection</h3>
+          <p>Over 2 years</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="../src/images/icon-free-shipping.svg" alt="free-shipping" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">Free Shipping</h3>
+          <p>Order over 150 $</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="../src/images/icon-support.svg" alt="support" />
+        <div class="font-poppins">
+          <h3 class="text-[20px]">24 / 7 Support</h3>
+          <p>Dedicated support</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#fafafa]">
+      <div
+        class="py-36 flex justify-start max-w-7xl mx-auto gap-5 flex-col xl:flex-row">
+        <div>
+          <div>
+            <h2 class="font-volkhov text-dark text-5xl mb-5">
+              Deals Of The Month
+            </h2>
+            <p class="max-w-[435px] font-poppins text-light mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+              duis ultrices sollicitudin
+            </p>
+            <button
+              class="bg-black text-white font-poppins py-5 px-[70px] rounded-[10px] shadow-2xl">
+              Buy Now
+            </button>
+          </div>
+
+          <div class="h-[260px]">
+            <h3 class="font-poppins text-dark text-[28px] py-8">
+              Hurry, Before It’s Too Late!
+            </h3>
+            <div class="flex gap-7 text-center">
+              <div>
+                <p
+                  class="font-digital text-dark text-[32px] bg-white w-[76px] h-[76px] flex items-center justify-center shadow-md rounded-[10px] mb-4">
+                  00
+                </p>
+                <p class="font-poppins text-dark text-2xl mb-4">Days</p>
+              </div>
+              <div>
+                <p
+                  class="font-digital text-dark text-[32px] bg-white w-[76px] h-[76px] flex items-center justify-center shadow-md rounded-[10px] mb-4">
+                  00
+                </p>
+                <p class="font-poppins text-dark text-2xl mb-4">Hr</p>
+              </div>
+              <div>
+                <p
+                  class="font-digital text-dark text-[32px] bg-white w-[76px] h-[76px] flex items-center justify-center shadow-md rounded-[10px] mb-4">
+                  00
+                </p>
+                <p class="font-poppins text-dark text-2xl mb-4">Mins</p>
+              </div>
+              <div>
+                <p
+                  class="font-digital text-dark text-[32px] bg-white w-[76px] h-[76px] flex items-center justify-center shadow-md rounded-[10px] mb-4">
+                  00
+                </p>
+                <p class="font-poppins text-dark text-2xl mb-4">Sec</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-end gap-4">
+          <button class="shadow-2xl rounded-full cursor-pointer">
+            <img src="../src/images/arrow-left.svg" alt="arrow-left" />
+          </button>
+          <button class="shadow-2xl rounded-full cursor-pointer">
+            <img src="../src/images/arrow-right.svg" alt="arrow-left" />
+          </button>
+        </div>
+
+        <div class="relative grow pb-[450px]">
+          <div class="flex gap-5 absolute top-0 bottom-0 w-[1300px]">
+            <div>
+              <img src="../src/images/carousal-photo.png" alt="carousal" />
+              <div
+                class="absolute bottom-3 left-5 bg-white text-dark px-8 py-7 font-poppins">
+                <p>01 — Spring Sale</p>
+                <p class="text-[28px]">30% OFF</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-start justify-between">
+              <img src="../src/images/carousal-photo1.png" alt="carousal" />
+              <div class="flex gap-2 justify-center mt-8">
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+              </div>
+            </div>
+            <div>
+              <img src="../src/images/carousal-photo2.png" alt="carousal" />
+            </div>
+            <div>
+              <img src="../src/images/carousal-photo4.png" alt="carousal" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="mx-auto flex items-center text-center justify-center font-poppins mb-12 gap-8 mt-[150px]">
+      <div class="hidden md:block">
+        <img src="../src/images/newsletter-men.png" alt="newsletter" />
+      </div>
+
+      <div class="flex flex-col">
+        <h2 class="font-volkhov text-5xl text-dark mb-5">
+          Subscribe To Our Newsletter
+        </h2>
+        <p class="text-light max-w-[615px] mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin
+        </p>
+        <input
+          type="email"
+          placeholder="michael@ymail.com"
+          class="text-[22px] px-9 py-7 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          required />
+        <div class="bg-gradient-to-b from-[#f2f2f2] to-transparent py-8">
+          <button
+            class="text-white bg-black px-11 py-5 rounded-[10px] px-5 shadow-2xl cursor-pointer">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img src="../src/images/Newsletter-women.png" alt="newsletter" />
+      </div>
+    </section>
+    <hr class="border-t-2 border-gray-300 mb-8" />
+
+    <footer class="container mx-auto max-w-7xl font-poppins text-dark">
+      <div class="flex justify-between flex-wrap">
+        <a href="../pages/homepage.html">
+          <img
+            class="h-8 mb-8 mr-8 cursor-pointer"
+            src="../src/images/fasco-logo.svg"
+            alt="fasco-logo" />
+        </a>
+        <nav>
+          <ul class="flex gap-[70px]">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Contacts</li>
+          </ul>
+        </nav>
+      </div>
+      <p class="mb-5 mt-12 text-xs flex justify-center">
+        Copyright © 2022 FASCO . All Rights Reseved.
+      </p>
+    </footer>
+  </body>
+</html>
