@@ -1,0 +1,62 @@
+"use strict";
+
+// ==============================================
+// Завдання 1:
+// Напишіть функцію, яка приймає два числа і повертає числа між ними (включно) однією строкою через пробіл:
+function numbersBetween(min, max) {
+  let result = "";
+  for (let i = min; i <= max; i++) {
+    result = result + i + " ";
+  }
+  return result.trim();
+}
+console.log(numbersBetween(1, 5)); // "1 2 3 4 5"
+console.log(numbersBetween(3, 7)); // "3 4 5 6 7"
+
+// =============================================
+// Завдання 2:
+// Напишіть функцію, яка приймає рядок і повертає його у зворотньому порядку:
+function reverseString(str) {
+  let revers = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    revers = revers + str[i];
+  }
+  return revers;
+}
+
+console.log(reverseString("hello")); // "olleh"
+console.log(reverseString("JavaScript")); // "tpircSavaJ"
+
+// ==============================================
+// Завдання 3:
+// Реалізуйте функцію яка повертає рядок випадкових символів із набору symbols довжиною keyLength
+function generateKey(keyLength, symbols) {
+  let password = "";
+  const symbolsLength = symbols.length;
+  for (let i = 0; i < keyLength; i++) {
+    const randomIndex = Math.floor(Math.random() * symbolsLength);
+    password = password + symbols[randomIndex];
+  }
+  return password;
+}
+
+const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+const key = generateKey(16, characters);
+console.log(key); // eg599gb60q926j8i - випадкові символи з набору characters, 16 штук
+
+const numbersOnly = "0123456789";
+const numberKey = generateKey(25, numbersOnly);
+console.log(numberKey); // 3847501826482930485728394 - випадкові символи з набору numbersOnly, 25 штук
+
+// ==============================================
+// Завдання 4 ЗА БАЖАННЯМ:
+// Напишіть функцію, яка приймає два числа і виводить усі прості числа між ними (включно):
+// Числа які діляться без залишку тільки на 1 і самі на себе
+// Зовнішній цикл має проходити по всіх числах в діапазоні
+// Внутрішній цикл має перевіряти чи є число простим (чи остаток від ділення на будь-яке число, окрім 1 і самого себе, дорівнює нулю)
+function getPrimes(min, max) {
+  // тут має бути ваш код
+}
+
+console.log(getPrimes(2, 10)); // "2 3 5 7"
+console.log(getPrimes(20, 41)); // "23 29 31 37 41"
