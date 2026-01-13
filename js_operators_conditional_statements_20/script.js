@@ -55,7 +55,22 @@ console.log(numberKey); // 3847501826482930485728394 - випадкові сим
 // Зовнішній цикл має проходити по всіх числах в діапазоні
 // Внутрішній цикл має перевіряти чи є число простим (чи остаток від ділення на будь-яке число, окрім 1 і самого себе, дорівнює нулю)
 function getPrimes(min, max) {
-  // тут має бути ваш код
+  let num = "";
+  for (let i = min; i <= max; i++) {
+    let isPrime = true;
+
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+
+    if (isPrime === true) {
+      num = num + i + " ";
+    }
+  }
+  return num;
 }
 
 console.log(getPrimes(2, 10)); // "2 3 5 7"
