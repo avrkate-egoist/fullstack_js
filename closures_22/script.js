@@ -18,9 +18,8 @@ function mainCounter() {
       return counter;
     }
 
-    const current = counter;
     counter = counter + 1;
-    return current;
+    return counter;
   };
 
   return calculator;
@@ -28,8 +27,8 @@ function mainCounter() {
 
 const counter = mainCounter();
 
-console.log(counter()); // 0
 console.log(counter()); // 1
+console.log(counter()); // 2
 console.log(counter(100)); // 100
 console.log(counter()); // 101
 console.log(counter()); // 102
@@ -37,8 +36,8 @@ console.log(counter(500)); // 500
 console.log(counter()); // 501
 console.log(counter()); // 502
 console.log(counter(0)); // 0
-console.log(counter()); // 0
 console.log(counter()); // 1
+console.log(counter()); // 2
 
 /*
  * #2
