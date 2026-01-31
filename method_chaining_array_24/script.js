@@ -121,4 +121,8 @@ console.log("Найбагатший користувач:", richestUser.name, ri
 
 // #4 ЗА БАЖАННЯМ Вивести користувачів з повторюючимися іменами
 
+const sameNames = users.filter((user) =>
+  users.some((other) => other !== user && other.name === user.name),
+);
+console.log(sameNames);
 // ЗАБОРОНЕНО КОРИСТУВАТИСЯ ФОРОМ
