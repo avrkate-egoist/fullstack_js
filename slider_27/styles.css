@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(20, 20, 20);
+}
+.header {
+  color: rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 100px;
+}
+.slider {
+  margin: 0 auto;
+  width: 630px;
+  position: relative;
+}
+.slider-viewport {
+  width: 100%;
+  overflow-x: hidden;
+}
+.slider-line {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.slow-switch {
+  transition: transform 0.5s;
+}
+.slider-nav {
+  font-size: 80px;
+  color: rgb(200, 200, 200);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  opacity: 0.3;
+}
+.slider-nav:hover {
+  opacity: 0.7;
+}
+.slider-right {
+  right: 0;
+}
+.slider-left {
+  left: 0;
+}
+.play-container {
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  opacity: 0.3;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-btn {
+  width: 0;
+  height: 0;
+  border-left: 30px solid rgb(200, 200, 200);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+  display: none;
+}
+.pause-btn {
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+}
+.pause-btn::before,
+.pause-btn::after {
+  content: "";
+  width: 8px;
+  height: 30px;
+  background-color: rgb(200, 200, 200);
+}
+.play-container:hover {
+  opacity: 0.7;
+}
+.play-container.paused .play-btn {
+  display: block;
+}
+.play-container.paused .pause-btn {
+  display: none;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  opacity: 0.3;
+  cursor: pointer;
+  display: inline-block;
+}
+.dot.active {
+  background-color: rgb(20, 20, 20);
+  opacity: 0.7;
+}
