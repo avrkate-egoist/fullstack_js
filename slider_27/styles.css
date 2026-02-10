@@ -2,17 +2,17 @@ body {
   background-color: rgb(20, 20, 20);
 }
 .header {
-  color: rgb(200, 200, 200);
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  margin: 0;
   text-align: center;
-  align-items: center;
   font-family: "Amatic SC", cursive;
-  font-size: 100px;
+  font-size: clamp(50px, 8vw, 100px);
+  color: rgb(200, 200, 200);
 }
 .slider {
   margin: 0 auto;
-  width: 630px;
+  width: 100%;
+  max-width: 630px;
   position: relative;
 }
 .slider-viewport {
