@@ -16,5 +16,5 @@ const imageList2 = [
   "images/poster_5.jpg",
 ];
 
-new Gallery("cats", imageList);
-new Gallery("cats2", imageList2);
+new Gallery("cats", imageList, { autoplayInterval: 5000, showDots: true });
+new Gallery("cats2", imageList2, { autoplayInterval: 2000, showDots: false });

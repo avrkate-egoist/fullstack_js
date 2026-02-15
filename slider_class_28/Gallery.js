@@ -1,4 +1,3 @@
-const PLAY_TIMEOUT_SEC = 3;
 const SWIPE_THRESHOLD = 80;
 
 export class Gallery {
@@ -12,7 +11,7 @@ export class Gallery {
   currentTranslate = 0;
   isSwiping = false;
 
-  constructor(sliderId, imageList) {
+  constructor(sliderId, imageList, config = {}) {
     if (!sliderId) {
       throw new Error("First parameter must be slider id");
     }
@@ -22,6 +21,10 @@ export class Gallery {
     }
 
     this.imageList = imageList;
+    this.config = {
+      autoplayInterval: config.autoplayInterval || PLAY_TIMEOUT_SEC * 1000,
+      showDots: config.showDots !== false,
+    };
     this.slider = document.getElementById(sliderId);
     this.createHtmlStructure();
     this.getElementsFromPage(sliderId);
@@ -66,7 +69,7 @@ export class Gallery {
 
     this.intervalTimer = setInterval(
       () => this.rightClick(),
-      PLAY_TIMEOUT_SEC * 1000,
+      this.config.autoplayInterval,
     );
   }
 
@@ -110,6 +113,9 @@ export class Gallery {
   }
 
   createDots() {
+    if (!this.config.showDots) {
+      return;
+    }
     this.imageList.forEach((_, index) => {
       const dot = document.createElement("span");
       dot.className = "dot";
@@ -172,7 +178,7 @@ export class Gallery {
     if (!this.intervalTimer) {
       this.intervalTimer = setInterval(
         () => this.rightClick(),
-        PLAY_TIMEOUT_SEC * 1000,
+        this.config.autoplayInterval,
       );
       console.log("clicked play");
     }
