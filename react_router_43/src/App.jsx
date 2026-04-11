@@ -21,26 +21,29 @@ import Layout from "./components/Layout";
 //   );
 // }
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contacts",
-        element: <Contacts />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contacts",
+          element: <Contacts />,
+        },
+      ],
+    },
+  ],
+  { basename: "/fullstack_js/react_router_43/dist" },
+);
 
 export default function App() {
   return <RouterProvider router={router} />;
