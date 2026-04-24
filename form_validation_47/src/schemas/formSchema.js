@@ -18,14 +18,13 @@ export const schema = yup.object().shape({
     message:
       "Phone number must contain only numbers.No spaces, brackets or plus signs",
     excludeEmptyString: true,
-
-    password: yup
-      .string()
-      .min(8, "Password must be at least 8 characters")
-      .matches(
-        passwordValidation,
-        "Must contain at least one uppercase, one lowercase, one number and one special case character",
-      )
-      .required("Password is required"),
   }),
+  password: yup
+    .string()
+    .min(8, "Password must be at least 8 characters")
+    .matches(
+      passwordValidation,
+      "Must contain at least one uppercase, one lowercase, one number and one special case character",
+    )
+    .required("Password is required"),
 });
