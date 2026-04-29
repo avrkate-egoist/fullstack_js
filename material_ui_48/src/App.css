@@ -1,0 +1,19 @@
+.main-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container .MuiGrid-root {
+  justify-content: center;
+}
+
+.main-container .MuiCard-root {
+  margin: 20px;
+}
+.breadcrumb-container {
+  display: flex;
+  justify-content: center;
+  background-color: #2e1a47;
+  padding: 20px;
+}
