@@ -3,8 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Products from "./components/Products";
-import Product from "./components/ProductsItems";
+import ProductPage from "./components/ProductPage";
 import NotFound from "./components/NotFound";
+import NewArrivals from "./components/NewArrivals";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
+        path: "/new-arrivals",
+        element: <NewArrivals />,
+      },
+      {
         path: "/products/:productId",
-        element: <Product />,
+        element: <ProductPage />,
       },
     ],
   },

@@ -1,18 +1,40 @@
+import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NewsletterMen from "../assets/images/newsletter-men.png";
+import NewsletterWoman from "../assets/images/Newsletter-women.png";
 
 export default function Form() {
-  const handleShowToast = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email.trim()) {
+      toast.error("Будь ласка, введіть вашу електронну адресу!");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error(
+        "Будь ласка, введіть коректний email (наприклад, michael@ymail.com)!",
+      );
+      return;
+    }
+
     toast.success("Subscription to news is completed!");
+    setEmail("");
   };
+
   return (
     <div>
-      <section className='mx-auto flex items-center text-center justify-center font-poppins mb-12 gap-8'>
+      <section className='mx-auto flex items-center text-center justify-center font-poppins mb-12 gap-8 mt-34.5'>
         <div className='hidden md:block'>
-          <img src='src/images/newsletter-men.png' alt='newsletter' />
+          <img src={NewsletterMen} alt='newsletter' />
         </div>
 
-        <div className='flex flex-col'>
+        <form onSubmit={handleSubmit} className='flex flex-col' noValidate>
           <h2 className='font-volkhov text-5xl text-dark mb-5'>
             Subscribe To Our Newsletter
           </h2>
@@ -24,12 +46,13 @@ export default function Form() {
           <input
             type='email'
             placeholder='michael@ymail.com'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className='text-[22px] px-9 py-7 focus:outline-none focus:ring-2 focus:ring-gray-400'
-            required
           />
           <div className='bg-linear-to-b from-[#f2f2f2] to-transparent py-8'>
             <button
-              onClick={handleShowToast}
+              type='submit'
               className='text-white bg-black px-11 py-5 rounded-[10px] shadow-2xl'>
               Subscribe Now
             </button>
@@ -46,9 +69,10 @@ export default function Form() {
               theme='dark'
             />
           </div>
-        </div>
+        </form>
+
         <div className='hidden md:block'>
-          <img src='src/images/Newsletter-women.png' alt='newsletter' />
+          <img src={NewsletterWoman} alt='newsletter' />
         </div>
       </section>
     </div>

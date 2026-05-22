@@ -1,10 +1,10 @@
-import photo1 from "../images/scroll-photo-1.png";
-import photo2 from "../images/scroll-photo-2.png";
-import photo3 from "../images/scroll-photo-3.png";
-import photo4 from "../images/scroll-photo-4.png";
-import photo5 from "../images/scroll-photo-5.png";
-import photo6 from "../images/scroll-photo-6.png";
-import photo7 from "../images/scroll-photo-7.png";
+import photo1 from "../assets/images/scroll-photo-1.png";
+import photo2 from "../assets/images/scroll-photo-2.png";
+import photo3 from "../assets/images/scroll-photo-3.png";
+import photo4 from "../assets/images/scroll-photo-4.png";
+import photo5 from "../assets/images/scroll-photo-5.png";
+import photo6 from "../assets/images/scroll-photo-6.png";
+import photo7 from "../assets/images/scroll-photo-7.png";
 
 export default function FollowInstagram() {
   return (

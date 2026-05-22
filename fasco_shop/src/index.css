@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: "Poppins-Font";
-  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Volkhov-Font";
-  src: url("./fonts/Volkhov-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Volkhov-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Jost-Font";
-  src: url("./fonts/Jost-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Jost-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Digital-Font";
-  src: url("./fonts/DigitalNumbers-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/DigitalNumbers-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -81,5 +81,3 @@
 body {
   margin: 20px;
 }
-
-

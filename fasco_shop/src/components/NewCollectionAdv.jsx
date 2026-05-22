@@ -1,9 +1,11 @@
+import bgStyleGirl from "../assets/images/bg-style-girl.png";
+
 export default function NewCollectionAdv() {
   return (
     <div>
       <section className='bg-style bg-no-repeat bg-center bg-cover max-w-480 mx-auto flex items-center justify-center xl: flex-wrap'>
         <div>
-          <img src='src/images/bg-style-girl.png' alt='style-girl' />
+          <img src={bgStyleGirl} alt='style-girl' />
         </div>
 
         <div className='font-poppins space-y-5 max-w-117.5 p-5 bg-white xl:bg-transparent'>
