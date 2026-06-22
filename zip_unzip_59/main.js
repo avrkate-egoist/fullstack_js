@@ -1,5 +1,29 @@
+import { createReadStream, createWriteStream } from "node:fs";
+import { access } from "node:fs/promises";
+import { createGzip, createGunzip } from "node:zlib";
+import { pipeline } from "node:stream/promises";
+import path from "node:path";
+
 console.log("#58. JavaScript homework example file");
 
+async function getUniqueFilePath(filePath) {
+  const dir = path.dirname(filePath);
+  const ext = path.extname(filePath);
+  const name = path.basename(filePath, ext);
+
+  let targetPath = filePath;
+  let counter = 1;
+
+  while (true) {
+    try {
+      await access(targetPath);
+      targetPath = path.join(dir, `${name}_${counter}${ext}`);
+      counter++;
+    } catch {
+      return targetPath;
+    }
+  }
+}
 /*
  *
  * #1
@@ -39,7 +63,19 @@ console.log("#58. JavaScript homework example file");
  */
 
 async function compressFile(filePath) {
-  // code here
+  try {
+    const outputPath = await getUniqueFilePath(`${filePath}.gz`);
+
+    await pipeline(
+      createReadStream(filePath),
+      createGzip(),
+      createWriteStream(outputPath),
+    );
+
+    return outputPath;
+  } catch (err) {
+    throw new Error(`Compression error: ${err.message}`);
+  }
 }
 
 /*
@@ -76,20 +112,32 @@ async function compressFile(filePath) {
  */
 
 async function decompressFile(compressedFilePath, destinationFilePath) {
-  // code here
+  try {
+    const outputPath = await getUniqueFilePath(destinationFilePath);
+
+    await pipeline(
+      createReadStream(compressedFilePath),
+      createGunzip(),
+      createWriteStream(outputPath),
+    );
+
+    return outputPath;
+  } catch (err) {
+    throw new Error(`Decompression error: ${err.message}`);
+  }
 }
 
 // ! Перевірка роботи функцій стиснення та розпакування файлів
-// async function performCompressionAndDecompression() {
-//   try {
-//     const compressedResult = await compressFile('./files/source.txt')
-//     console.log(compressedResult)
-//     const decompressedResult = await decompressFile(compressedResult, './files/source_decompressed.txt')
-//     console.log(decompressedResult)
-//   } catch (error) {
-//     console.error('Error during compression or decompression:', error)
-//   }
-// }
-// performCompressionAndDecompression()
+async function performCompressionAndDecompression() {
+  try {
+    const compressedResult = await compressFile('./source.txt')
+    console.log(compressedResult)
+    const decompressedResult = await decompressFile(compressedResult, './source_decompressed.txt')
+    console.log(decompressedResult)
+  } catch (error) {
+    console.error('Error during compression or decompression:', error)
+  }
+}
+performCompressionAndDecompression()
 
 export { compressFile, decompressFile };
