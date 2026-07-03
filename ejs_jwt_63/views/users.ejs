@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+  </head>
+  <body class="<%= theme %>-theme">
+    <button id="changeThemeButton">Change theme</button>
+    <form id="regForm">
+  <input type="text" id="username" placeholder="Логін" required>
+  <input type="password" id="password" placeholder="Пароль" required>
+  <button type="submit">Реєстрація</button>
+</form>
+    <h1>List of users</h1>
+    <ul">
+        <% users.forEach(user => { %>
+            <li>
+                <a href="/users/<%= user.id %>"><%= user.name %></a>
+            </li>
+        <% }) %>
+    </ul>
+    <script>
+    document.getElementById("changeThemeButton").addEventListener("click", async () => {
+        const currentTheme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        
+        try {
+            const response = await fetch('/theme', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ theme: currentTheme })
+            });
+
+            if (response.ok) {
+                location.reload();
+            }
+        } catch (error) {
+            console.error('Помилка при зміні теми:', error);
+        }
+    });
+</script>
+  </body>
+</html>
