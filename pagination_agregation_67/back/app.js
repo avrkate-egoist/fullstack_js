@@ -18,6 +18,12 @@ app.use(cors());
 
 app.use(express.json());
 
+console.log("Шлях до фронту:", path.join(__dirname, "../front"));
+app.use(express.static(path.join(__dirname, "../front")));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../front/index.html"));
+});
+
 app.get("/movies", async (req, res) => {
   const page = parseInt(req.query.page) || 1;
   const perPage = parseInt(req.query.perPage) || 10;
