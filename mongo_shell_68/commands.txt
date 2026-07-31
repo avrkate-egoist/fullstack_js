@@ -1,0 +1,62 @@
+use studentDB
+
+db.createCollection("assignments")
+
+db.assignments.insertMany([
+  { name: "John", subject: "Math", score: 85 },
+  { name: "Emma", subject: "Physics", score: 92 },
+  { name: "Michael", subject: "History", score: 78 },
+  { name: "Sophia", subject: "Math", score: 95 },
+  { name: "David", subject: "Chemistry", score: 64 },
+  { name: "Olivia", subject: "Physics", score: 88 },
+  { name: "James", subject: "History", score: 71 },
+  { name: "Emily", subject: "Chemistry", score: 90 },
+  { name: "Daniel", subject: "Math", score: 76 },
+  { name: "Jessica", subject: "Physics", score: 99 }
+])
+
+db.assignments.find({ score: { $gt: 80 } })
+
+db.assignments.updateOne(
+  { score: { $lt: 85 } },
+  { $inc: { score: 5 } }
+)
+
+db.assignments.deleteOne({}).sort({ score: 1 })
+
+db.assignments.find({}, { name: 1, score: 1, _id: 0 })
+
+                        db.assignments.aggregate([
+                        {
+                            $group: {
+                            _id: "$subject",
+                            averageScore: { $avg: "$score" }
+                            }
+                        }
+                        ])
+
+
+
+
+
+                        db.assignments.aggregate([
+                        {
+                            $group: {
+                            _id: "$subject",
+                            averageScore: { $avg: "$score" }
+                            }
+                        },
+                        {
+                            $match: {
+                            averageScore: { $gt: 75 }
+                            }
+                        }
+                        ])   ===>  по факту одне і теж з доп параметром
+
+db.assignments.createIndex({ name: 1 }, { unique: true }) (дивно, бо імена можуть повторюватись, але якщо то різні люди, то просто різні айдішніки будуть)
+
+отут далі з чатіком дороблювала.
+
+db.assignments.find({ name: /^E/ })
+
+db.assignments.find({ name: /^E/ }).explain("executionStats")
